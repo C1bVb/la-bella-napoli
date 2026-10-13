@@ -110,11 +110,11 @@ Al termine dovrai saper spiegare brevemente, in circa 2–3 minuti:
 
 ## Gruppi di lavoro
 
-> **Legenda:** `[ ]` non ancora convalidato · `[x]` Pull Request controllata e contributo convalidato dal Project Manager.
+> **Legenda:** `[ ]` non ancora convalidato · `[ X ]` Pull Request controllata e contributo convalidato dal Project Manager.
 
 | N. | Nome e cognome | Gruppo | Prodotto assegnato | Pull Request inviata e convalidata |
 |---:|---|---|---|:---:|
-| 1 | Christian Salvatore Magarini (C, PM ) | Dolci | [Prodotto] | [ ] |
+| 1 | Christian Salvatore Magarini (C, PM ) | Dolci | [Prodotto] | [ X ] |
 | 2 | Igor Rosario Tsukerman | Dolci | [Prodotto] | [ ] |
 | 3 | Christian Vatiero | Dolci | [Prodotto] | [ ] |
 | 4 | Simone Ariante | Dolci | [Prodotto] | [ ] |
