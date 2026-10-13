@@ -65,12 +65,12 @@ Per entrambe le opzioni, sostituisci il codice:
 
 con un tag `<img>` come quelli seguenti:
 
-`<img src="https://esempio.it/immagine.jpg" alt="Nome del prodotto">`
+`<img class="product-image" src="https://esempio.it/immagine.jpg" alt="Nome del prodotto">`
 se l'immagine è presa da Internet
 
 oppure
 
-`<img src="assets/images/nome-immagine.jpg" alt="Nome del prodotto">`
+`<img class="product-image" src="assets/images/nome-immagine.jpg" alt="Nome del prodotto">`
 se l'immagine è caricata nel progetto
 
 Sostituisci il link o il percorso con quello corretto e aggiorna il testo `alt` con il nome del tuo prodotto.
@@ -82,11 +82,6 @@ Quando hai finito, premi **Commit changes**, inserisci un messaggio chiaro (ad e
 
 ### 6. Invia una Pull Request al Project Manager
 Dalla tua fork, apri **Pull requests** e scegli **New pull request**. In alternativa, GitHub potrebbe mostrarti **Contribute** o **Compare & pull request**.
-
-Controlla che:
-- la **base repository** sia la repository principale `la-bella-napoli` del Project Manager;
-- la **head repository** sia la tua fork;
-- le modifiche riguardino soltanto il prodotto assegnato.
 
 Inserisci un titolo che identifichi il contributo, ad esempio:
 
