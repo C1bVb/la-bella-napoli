@@ -400,7 +400,6 @@ a {
 .hero > p:not(.eyebrow) { animation-delay: 100ms; }
 .hero-link { animation-delay: 180ms; }
 
-/* Piccolo movimento al passaggio del mouse sulle schede prodotto. */
 .product-card {
   transition: transform 180ms ease, box-shadow 180ms ease;
 }
@@ -409,7 +408,6 @@ a {
   transform: translateY(-4px);
 }
 
-/* Rispetta chi preferisce ridurre le animazioni nel proprio dispositivo. */
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
   .hero h1,
