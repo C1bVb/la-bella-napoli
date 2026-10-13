@@ -1,0 +1,425 @@
+
+/* NON MODIFICARE QUESTO FILE!!! */
+
+:root {
+  --wine: #8f2027;
+  --wine-dark: #65181d;
+  --cream: #fbf7ef;
+  --cream-deep: #f0e6d8;
+  --ink: #282321;
+  --muted: #716761;
+  --white: #ffffff;
+  --line: #e5d8c9;
+  --shadow: 0 10px 30px rgba(54, 27, 20, 0.08);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 95px;
+}
+
+body {
+  margin: 0;
+  background: var(--cream);
+  color: var(--ink);
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.6;
+}
+
+a {
+  color: inherit;
+}
+
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  padding: 14px clamp(20px, 5vw, 76px);
+  background: rgba(251, 247, 239, 0.96);
+  border-bottom: 1px solid var(--line);
+  backdrop-filter: blur(10px);
+}
+
+.brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  text-decoration: none;
+}
+
+.brand-logo {
+  width: 72px;             
+  height: 72px;
+  flex: 0 0 72px;
+  object-fit: contain;   
+  object-position: center;
+  border: 2px solid var(--wine);
+  border-radius: 8px;
+}
+
+.brand-text {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.1;
+}
+
+.brand-name {
+  color: var(--wine);
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 1.35rem;
+  font-weight: 700;
+}
+
+.brand-subtitle {
+  margin-top: 5px;
+  color: var(--muted);
+  font-size: 0.62rem;
+  letter-spacing: 0.24em;
+}
+
+.main-nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.main-nav a {
+  padding: 9px 15px;
+  border-radius: 999px;
+  color: var(--wine-dark);
+  font-size: 0.95rem;
+  font-weight: 700;
+  text-decoration: none;
+  transition: background-color 160ms ease, color 160ms ease;
+}
+
+.main-nav a:hover,
+.main-nav a:focus-visible {
+  background: var(--wine);
+  color: var(--white);
+}
+
+.hero {
+  position: relative;
+  overflow: hidden;
+  isolation: isolate;
+  padding: clamp(70px, 10vw, 130px) 24px clamp(64px, 8vw, 100px);
+  text-align: center;
+  background:
+    linear-gradient(rgba(35, 20, 18, 0.56), rgba(35, 20, 18, 0.58)),
+    radial-gradient(ellipse at 18% 18%, rgba(143, 32, 39, 0.78), transparent 42%),
+    radial-gradient(ellipse at 82% 78%, rgba(143, 32, 39, 0.58), transparent 38%),
+    repeating-linear-gradient(135deg, #6f2825 0 2px, #7e302b 2px 4px, #54211f 4px 12px);
+  color: var(--white);
+}
+
+.hero::before,
+.hero::after {
+  position: absolute;
+  z-index: -1;
+  content: "";
+  pointer-events: none;
+}
+
+.hero::before {
+  inset: 18px;
+  border: 1px solid rgba(251, 247, 239, 0.24);
+  border-radius: 4px;
+}
+
+.hero::after {
+  width: 360px;
+  height: 360px;
+  top: -190px;
+  right: -100px;
+  border: 1px solid rgba(251, 247, 239, 0.16);
+  border-radius: 50%;
+  box-shadow: 0 0 0 28px rgba(251, 247, 239, 0.025), 0 0 0 58px rgba(251, 247, 239, 0.025);
+}
+
+.eyebrow {
+  margin: 0 0 10px;
+  color: var(--wine);
+  font-size: 0.75rem;
+  font-weight: 800;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+}
+
+.hero .eyebrow {
+  color: #f0c9a8;
+}
+
+.hero h1 {
+  margin: 0;
+  color: var(--cream);
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(2.8rem, 7vw, 5.2rem);
+  font-weight: 700;
+  letter-spacing: -0.04em;
+  line-height: 1.05;
+}
+
+.hero > p:not(.eyebrow) {
+  max-width: 650px;
+  margin: 22px auto 28px;
+  color: rgba(255, 255, 255, 0.88);
+  font-size: clamp(1rem, 2vw, 1.15rem);
+}
+
+.hero-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px 20px;
+  border-radius: 5px;
+  background: var(--wine);
+  color: var(--white);
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.hero-link:hover,
+.hero-link:focus-visible {
+  background: var(--wine-dark);
+}
+
+.menu-section {
+  padding: 76px clamp(20px, 5vw, 76px);
+}
+
+.menu-section-alt {
+  background: var(--cream-deep);
+}
+
+.section-heading {
+  max-width: 780px;
+  margin: 0 auto 34px;
+  text-align: center;
+}
+
+.section-heading h2 {
+  margin: 0;
+  color: var(--wine-dark);
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(2rem, 4.5vw, 3.2rem);
+  line-height: 1.15;
+}
+
+.section-intro {
+  margin: 12px 0 0;
+  color: var(--muted);
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 22px;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.product-card {
+  overflow: hidden;
+  min-width: 0;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  background: var(--white);
+  box-shadow: var(--shadow);
+  transition: transform 180ms ease, box-shadow 180ms ease;
+}
+
+.product-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 14px 34px rgba(54, 27, 20, 0.13);
+}
+
+.product-image {
+  display: flex;
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  align-items: center;
+  justify-content: center;
+  object-fit: cover;
+  background: #eee2d2;
+  color: #79685c;
+  font-size: 0.9rem;
+  text-align: center;
+}
+
+/* Quando inserisci una vera immagine, usa:
+   <img class="product-image" src="assets/images/nome-file.jpg" alt="Descrizione immagine">
+   e rimuovi le classi image-placeholder e il testo segnaposto.
+*/
+.image-placeholder {
+  padding: 12px;
+  background:
+    linear-gradient(135deg, rgba(143, 32, 39, 0.06), rgba(143, 32, 39, 0.01)),
+    repeating-linear-gradient(45deg, #f3e8da 0 12px, #eee0cf 12px 24px);
+}
+
+.product-info {
+  padding: 18px;
+}
+
+.product-title-row {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.product-title-row h3 {
+  margin: 0;
+  color: var(--ink);
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 1.15rem;
+  line-height: 1.25;
+}
+
+.price {
+  flex-shrink: 0;
+  color: var(--wine);
+  font-weight: 800;
+  white-space: nowrap;
+}
+
+.product-info p {
+  margin: 12px 0 0;
+  color: var(--muted);
+  font-size: 0.92rem;
+  line-height: 1.5;
+}
+
+.site-footer {
+  padding: 36px 20px;
+  background: var(--wine-dark);
+  color: #f8eee3;
+  text-align: center;
+}
+
+.footer-brand {
+  margin: 0;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.site-footer p:last-child {
+  margin: 6px 0 0;
+  color: #e4cfc2;
+  font-size: 0.9rem;
+}
+
+@media (max-width: 1050px) {
+  .product-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 760px) {
+  .site-header {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .main-nav {
+    width: 100%;
+  }
+
+  .main-nav a {
+    padding: 8px 12px;
+  }
+
+  .product-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 14px;
+  }
+
+  .product-info {
+    padding: 14px;
+  }
+
+  .product-title-row {
+    flex-direction: column;
+    gap: 5px;
+  }
+}
+
+@media (max-width: 480px) {
+  .product-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .product-card {
+    display: grid;
+    grid-template-columns: 38% 1fr;
+  }
+
+  .product-image {
+    height: 100%;
+    min-height: 150px;
+    aspect-ratio: auto;
+  }
+
+  .brand-logo {
+    width: 58px;
+    height: 58px;
+    flex-basis: 58px;
+  }
+
+  .brand-name {
+    font-size: 1.15rem;
+  }
+}
+
+
+/* Piccolo ingresso morbido delle sezioni quando la pagina viene caricata.
+   Non usa JavaScript: è una semplice animazione CSS. */
+@keyframes comparsa {
+  from { opacity: 0; transform: translateY(12px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+.hero h1,
+.hero .eyebrow,
+.hero > p:not(.eyebrow),
+.hero-link {
+  animation: comparsa 650ms ease-out both;
+}
+
+.hero > p:not(.eyebrow) { animation-delay: 100ms; }
+.hero-link { animation-delay: 180ms; }
+
+/* Piccolo movimento al passaggio del mouse sulle schede prodotto. */
+.product-card {
+  transition: transform 180ms ease, box-shadow 180ms ease;
+}
+
+.product-card:hover {
+  transform: translateY(-4px);
+}
+
+/* Rispetta chi preferisce ridurre le animazioni nel proprio dispositivo. */
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  .hero h1,
+  .hero .eyebrow,
+  .hero > p:not(.eyebrow),
+  .hero-link {
+    animation: none;
+  }
+  .product-card,
+  .main-nav a {
+    transition: none;
+  }
+}

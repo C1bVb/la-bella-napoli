@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Il menu di La Bella Napoli: pizze, bibite e dolci.">
+  <title>La Bella Napoli | Pizzeria</title>
+  <link rel="icon" type="image/png" href="assets/images/logo-la-bella-napoli.png">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#inizio" aria-label="La Bella Napoli, torna all'inizio">
+      <!-- LOGO: l'immagine resta intera, senza ritagli circolari. -->
+      <img class="brand-logo" src="assets/images/logo-la-bella-napoli.png" alt="Logo La Bella Napoli">
+      <span class="brand-text">
+        <span class="brand-name">La Bella Napoli</span>
+        <span class="brand-subtitle">P I Z Z E R I A</span>
+      </span>
+    </a>
+
+    <nav class="main-nav" aria-label="Menu principale">
+      <a href="#pizze">Pizze</a>
+      <a href="#bibite">Bibite</a>
+      <a href="#dolci">Dolci</a>
+    </nav>
+  </header>
+
+  <main id="inizio">
+    <section class="hero" aria-labelledby="hero-title">
+      <p class="eyebrow">Tradizione italiana, gusto autentico</p>
+      <h1 id="hero-title">Il nostro menu</h1>
+      <p>Scopri le proposte di <strong>La Bella Napoli</strong>: scegli la tua pizza, accompagna il pasto con una bibita e concludi con un dolce.</p>
+      <a class="hero-link" href="#pizze">Esplora il menu <span aria-hidden="true">↓</span></a>
+    </section>
+
+    <!--
+      TEMPLATE PER GLI STUDENTI
+      Modifica soltanto lo slot assegnato dal Project Manager.
+      Ogni prodotto deve avere nome, descrizione, prezzo e immagine.
+      Non cambiare gli ID delle sezioni o le classi CSS.
+    -->
+
+    <section class="menu-section" id="pizze" aria-labelledby="pizze-title">
+      <div class="section-heading">
+        <p class="eyebrow">Dal forno alla tavola</p>
+        <h2 id="pizze-title">Le nostre pizze</h2>
+        <p class="section-intro">Impasti fragranti e ingredienti scelti.</p>
+      </div>
+      <div class="product-grid">
+        <!-- SLOT PIZZA 01: sostituire questo prodotto con la propria pizza -->
+        <article class="product-card">
+          <div class="product-image image-placeholder" role="img" aria-label="Immagine della pizza da inserire">Immagine pizza 01</div>
+          <div class="product-info"><div class="product-title-row"><h3>Nome della pizza</h3><span class="price">€ 0,00</span></div><p>Scrivi qui una breve descrizione degli ingredienti.</p></div>
+        </article>
+        <!-- SLOT PIZZA 02 -->
+        <article class="product-card">
+          <div class="product-image image-placeholder" role="img" aria-label="Immagine della pizza da inserire">Immagine pizza 02</div>
+          <div class="product-info"><div class="product-title-row"><h3>Nome della pizza</h3><span class="price">€ 0,00</span></div><p>Scrivi qui una breve descrizione degli ingredienti.</p></div>
+        </article>
+        <!-- SLOT PIZZA 03 -->
+        <article class="product-card">
+          <div class="product-image image-placeholder" role="img" aria-label="Immagine della pizza da inserire">Immagine pizza 03</div>
+          <div class="product-info"><div class="product-title-row"><h3>Nome della pizza</h3><span class="price">€ 0,00</span></div><p>Scrivi qui una breve descrizione degli ingredienti.</p></div>
+        </article>
+        <!-- SLOT PIZZA 04 -->
+        <article class="product-card">
+          <div class="product-image image-placeholder" role="img" aria-label="Immagine della pizza da inserire">Immagine pizza 04</div>
+          <div class="product-info"><div class="product-title-row"><h3>Nome della pizza</h3><span class="price">€ 0,00</span></div><p>Scrivi qui una breve descrizione degli ingredienti.</p></div>
+        </article>
+        <!-- SLOT PIZZA 05 -->
+        <article class="product-card">
+          <div class="product-image image-placeholder" role="img" aria-label="Immagine della pizza da inserire">Immagine pizza 05</div>
+          <div class="product-info"><div class="product-title-row"><h3>Nome della pizza</h3><span class="price">€ 0,00</span></div><p>Scrivi qui una breve descrizione degli ingredienti.</p></div>
+        </article>
+        <!-- SLOT PIZZA 06 -->
+        <article class="product-card">
+          <div class="product-image image-placeholder" role="img" aria-label="Immagine della pizza da inserire">Immagine pizza 06</div>
+          <div class="product-info"><div class="product-title-row"><h3>Nome della pizza</h3><span class="price">€ 0,00</span></div><p>Scrivi qui una breve descrizione degli ingredienti.</p></div>
+        </article>
+        <!-- SLOT PIZZA 07 -->
+        <article class="product-card">
+          <div class="product-image image-placeholder" role="img" aria-label="Immagine della pizza da inserire">Immagine pizza 07</div>
+          <div class="product-info"><div class="product-title-row"><h3>Nome della pizza</h3><span class="price">€ 0,00</span></div><p>Scrivi qui una breve descrizione degli ingredienti.</p></div>
+        </article>
+        <!-- SLOT PIZZA 08 -->
+        <article class="product-card">
+          <div class="product-image image-placeholder" role="img" aria-label="Immagine della pizza da inserire">Immagine pizza 08</div>
+          <div class="product-info"><div class="product-title-row"><h3>Nome della pizza</h3><span class="price">€ 0,00</span></div><p>Scrivi qui una breve descrizione degli ingredienti.</p></div>
+        </article>
+      </div>
+    </section>
+
+    <section class="menu-section menu-section-alt" id="bibite" aria-labelledby="bibite-title">
+      <div class="section-heading">
+        <p class="eyebrow">Fresche e dissetanti</p>
+        <h2 id="bibite-title">Le nostre bibite</h2>
+        <p class="section-intro">La bevanda giusta per accompagnare ogni scelta.</p>
+      </div>
+      <div class="product-grid">
+        <!-- SLOT BIBITA 01 -->
+        <article class="product-card">
+          <div class="product-image image-placeholder" role="img" aria-label="Immagine della bibita da inserire">Immagine bibita 01</div>
+          <div class="product-info"><div class="product-title-row"><h3>Nome della bibita</h3><span class="price">€ 0,00</span></div><p>Scrivi qui una breve descrizione della bibita e del formato.</p></div>
+        </article>
+        <!-- SLOT BIBITA 02 -->
+        <article class="product-card">
+          <div class="product-image image-placeholder" role="img" aria-label="Immagine della bibita da inserire">Immagine bibita 02</div>
+          <div class="product-info"><div class="product-title-row"><h3>Nome della bibita</h3><span class="price">€ 0,00</span></div><p>Scrivi qui una breve descrizione della bibita e del formato.</p></div>
+        </article>
+        <!-- SLOT BIBITA 03 -->
+        <article class="product-card">
+          <div class="product-image image-placeholder" role="img" aria-label="Immagine della bibita da inserire">Immagine bibita 03</div>
+          <div class="product-info"><div class="product-title-row"><h3>Nome della bibita</h3><span class="price">€ 0,00</span></div><p>Scrivi qui una breve descrizione della bibita e del formato.</p></div>
+        </article>
+        <!-- SLOT BIBITA 04 -->
+        <article class="product-card">
+          <div class="product-image image-placeholder" role="img" aria-label="Immagine della bibita da inserire">Immagine bibita 04</div>
+          <div class="product-info"><div class="product-title-row"><h3>Nome della bibita</h3><span class="price">€ 0,00</span></div><p>Scrivi qui una breve descrizione della bibita e del formato.</p></div>
+        </article>
+        <!-- SLOT BIBITA 05 -->
+        <article class="product-card">
+          <div class="product-image image-placeholder" role="img" aria-label="Immagine della bibita da inserire">Immagine bibita 05</div>
+          <div class="product-info"><div class="product-title-row"><h3>Nome della bibita</h3><span class="price">€ 0,00</span></div><p>Scrivi qui una breve descrizione della bibita e del formato.</p></div>
+        </article>
+        <!-- SLOT BIBITA 06 -->
+        <article class="product-card">
+          <div class="product-image image-placeholder" role="img" aria-label="Immagine della bibita da inserire">Immagine bibita 06</div>
+          <div class="product-info"><div class="product-title-row"><h3>Nome della bibita</h3><span class="price">€ 0,00</span></div><p>Scrivi qui una breve descrizione della bibita e del formato.</p></div>
+        </article>
+        <!-- SLOT BIBITA 07 -->
+        <article class="product-card">
+          <div class="product-image image-placeholder" role="img" aria-label="Immagine della bibita da inserire">Immagine bibita 07</div>
+          <div class="product-info"><div class="product-title-row"><h3>Nome della bibita</h3><span class="price">€ 0,00</span></div><p>Scrivi qui una breve descrizione della bibita e del formato.</p></div>
+        </article>
+        <!-- SLOT BIBITA 08 -->
+        <article class="product-card">
+          <div class="product-image image-placeholder" role="img" aria-label="Immagine della bibita da inserire">Immagine bibita 08</div>
+          <div class="product-info"><div class="product-title-row"><h3>Nome della bibita</h3><span class="price">€ 0,00</span></div><p>Scrivi qui una breve descrizione della bibita e del formato.</p></div>
+        </article>
+      </div>
+    </section>
+
+    <section class="menu-section" id="dolci" aria-labelledby="dolci-title">
+      <div class="section-heading">
+        <p class="eyebrow">Il finale perfetto</p>
+        <h2 id="dolci-title">I nostri dolci</h2>
+        <p class="section-intro">Una nota dolce per concludere il pasto.</p>
+      </div>
+      <div class="product-grid">
+        <!-- SLOT DOLCE 01 -->
+        <article class="product-card">
+          <div class="product-image image-placeholder" role="img" aria-label="Immagine del dolce da inserire">Immagine dolce 01</div>
+          <div class="product-info"><div class="product-title-row"><h3>Nome del dolce</h3><span class="price">€ 0,00</span></div><p>Scrivi qui una breve descrizione del dolce.</p></div>
+        </article>
+        <!-- SLOT DOLCE 02 -->
+        <article class="product-card">
+          <div class="product-image image-placeholder" role="img" aria-label="Immagine del dolce da inserire">Immagine dolce 02</div>
+          <div class="product-info"><div class="product-title-row"><h3>Nome del dolce</h3><span class="price">€ 0,00</span></div><p>Scrivi qui una breve descrizione del dolce.</p></div>
+        </article>
+        <!-- SLOT DOLCE 03 -->
+        <article class="product-card">
+          <div class="product-image image-placeholder" role="img" aria-label="Immagine del dolce da inserire">Immagine dolce 03</div>
+          <div class="product-info"><div class="product-title-row"><h3>Nome del dolce</h3><span class="price">€ 0,00</span></div><p>Scrivi qui una breve descrizione del dolce.</p></div>
+        </article>
+        <!-- SLOT DOLCE 04 -->
+        <article class="product-card">
+          <div class="product-image image-placeholder" role="img" aria-label="Immagine del dolce da inserire">Immagine dolce 04</div>
+          <div class="product-info"><div class="product-title-row"><h3>Nome del dolce</h3><span class="price">€ 0,00</span></div><p>Scrivi qui una breve descrizione del dolce.</p></div>
+        </article>
+        <!-- SLOT DOLCE 05 -->
+        <article class="product-card">
+          <div class="product-image image-placeholder" role="img" aria-label="Immagine del dolce da inserire">Immagine dolce 05</div>
+          <div class="product-info"><div class="product-title-row"><h3>Nome del dolce</h3><span class="price">€ 0,00</span></div><p>Scrivi qui una breve descrizione del dolce.</p></div>
+        </article>
+        <!-- SLOT DOLCE 06 -->
+        <article class="product-card">
+          <div class="product-image image-placeholder" role="img" aria-label="Immagine del dolce da inserire">Immagine dolce 06</div>
+          <div class="product-info"><div class="product-title-row"><h3>Nome del dolce</h3><span class="price">€ 0,00</span></div><p>Scrivi qui una breve descrizione del dolce.</p></div>
+        </article>
+        <!-- SLOT DOLCE 07 -->
+        <article class="product-card">
+          <div class="product-image image-placeholder" role="img" aria-label="Immagine del dolce da inserire">Immagine dolce 07</div>
+          <div class="product-info"><div class="product-title-row"><h3>Nome del dolce</h3><span class="price">€ 0,00</span></div><p>Scrivi qui una breve descrizione del dolce.</p></div>
+        </article>
+        <!-- SLOT DOLCE 08 -->
+        <article class="product-card">
+          <div class="product-image image-placeholder" role="img" aria-label="Immagine del dolce da inserire">Immagine dolce 08</div>
+          <div class="product-info"><div class="product-title-row"><h3>Nome del dolce</h3><span class="price">€ 0,00</span></div><p>Scrivi qui una breve descrizione del dolce.</p></div>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p class="footer-brand">La Bella Napoli</p>
+    <p>Un progetto collaborativo realizzato con HTML e CSS.</p>
+  </footer>
+</body>
+</html>
